@@ -1,0 +1,1046 @@
+2024.03.21 15:37:31 INFO  Started: Metals version 1.2.2 in folders 'C:\Projects\Gsoc-Scaladex-Task' for client Visual Studio Code 1.87.2.
+15:37:32.763 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+15:37:32.771 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+15:37:32.771 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+15:37:32.776 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+15:37:32.778 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+15:37:32.778 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+15:37:32.778 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+15:37:32.778 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+15:37:32.779 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+15:37:32.783 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+15:37:32.784 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+15:37:32.784 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+15:37:32.784 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+15:37:32.784 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+15:37:32.784 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+15:37:32.788 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:37:32.789 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+15:37:32.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+15:37:32.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+15:37:32.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+15:37:32.900 [pool-1-thread-4] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Projects\Gsoc-Scaladex-Task\.metals\metals (H2 2.2)
+15:37:32.900 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+15:37:32.900 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+15:37:32.901 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+15:37:32.901 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+15:37:32.904 [pool-1-thread-4] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+15:37:32.906 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+15:37:32.906 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:37:32.913 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+15:37:32.918 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:37:32.931 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:37:32.932 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:37:32.932 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:37:32.932 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:37:32.932 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:37:32.932 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+15:37:32.933 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+15:37:32.933 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+15:37:32.933 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+15:37:32.933 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+15:37:32.935 [pool-1-thread-4] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+15:37:32.939 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.025s)
+15:37:32.942 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+15:37:32.945 [pool-1-thread-4] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+15:37:32.947 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+15:37:32.955 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+15:37:32.956 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+15:37:32.957 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+15:37:32.962 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:32.962 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+15:37:32.965 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:32.965 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+15:37:32.978 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+15:37:32.978 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+15:37:32.980 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+15:37:32.982 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+15:37:32.983 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+15:37:32.984 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+15:37:32.985 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+15:37:32.988 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+15:37:32.990 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+15:37:32.991 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+15:37:32.994 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:32.994 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+15:37:32.996 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:32.997 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+15:37:32.997 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:32.997 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+15:37:32.998 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:32.999 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+15:37:33.009 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:33.010 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+15:37:33.029 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:37:33.045 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+15:37:33.070 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+15:37:33.071 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+15:37:33.073 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+15:37:33.073 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+15:37:33.076 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:33.082 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+15:37:33.087 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:37:33.091 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+15:37:33.094 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+15:37:33.095 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+15:37:33.096 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+15:37:33.096 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+15:37:33.098 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+15:37:33.098 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+15:37:33.108 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:33.109 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+15:37:33.119 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:33.120 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+15:37:33.120 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:33.120 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+15:37:33.122 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:37:33.124 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+15:37:33.126 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+15:37:33.126 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+15:37:33.130 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+15:37:33.131 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+15:37:33.133 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+15:37:33.133 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+15:37:33.135 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+15:37:33.142 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.063s)
+15:37:33.153 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 34 of 100M
+2024.03.21 15:40:57 INFO  no build target found for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.21 17:15:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:15:55 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:16:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:24:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:25:01 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:25:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:25:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:25:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:26:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:26:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:26:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:26:57 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:26:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:01 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:27:55 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:28:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:29:01 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:29:07 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:29:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:29:13 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:29:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:29:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 17:56:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:15:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:16:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 6:16:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 881
+2024.03.21 18:16:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:16:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:16:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:16:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:16:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:17:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:17:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:17:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:17:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:17:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:18:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:18:38 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:18:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:18:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:19:00 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:19:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:20:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:20:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:21:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:21:13 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:22:02 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:22:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:22:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:22:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:22:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:22:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:23:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:23:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:23:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:23:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:23:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:24:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:25:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:25:39 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:25:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:25:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:25:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:25:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:26:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:26:09 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:26:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:26:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:26:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:26:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:26:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:27:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:27:25 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:28:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:28:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:28:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:28:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:28:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:29:00 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:29:02 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s")
+                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:29:02 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s")
+                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:04 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s"Result is $value)
+                                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:249)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:05 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s"Result is $valu)
+                                                 ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:249)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:05 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s"Result is )
+                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:06 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s"Result is)
+                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:06 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s"Result)
+                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:07 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:29:07 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:35: error: unclosed string interpolation
+      case Success(value) => Ok(s"Result)
+                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 18:29:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:29:11 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:29:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:29:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:30:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:33:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:33:39 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:33:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:33:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:51:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:51:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 6:51:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2014
+2024.03.21 18:51:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:51:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:51:57 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:51:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:52:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:52:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 18:52:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 19:02:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 19:02:49 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 19:02:49 WARN  Build server is not auto-connectable.
+2024.03.21 19:03:25 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 19:03:25 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 19:03:25 WARN  Build server is not auto-connectable.
+2024.03.21 19:03:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 19:18:01 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:18:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:18:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+Mar 21, 2024 7:18:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2295
+2024.03.21 19:18:38 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:20:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 19:20:15 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 19:20:15 WARN  Build server is not auto-connectable.
+2024.03.21 19:20:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:20:28 WARN  Could not find semantic tokens for: file:///C:/Projects/Gsoc-Scaladex-Task/app/controllers/Testing.scala
+2024.03.21 19:20:29 WARN  Could not find semantic tokens for: file:///C:/Projects/Gsoc-Scaladex-Task/app/controllers/Testing.scala
+2024.03.21 19:20:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:20:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:20:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:38 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:22:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:17 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+scala.meta.tokenizers.TokenizeException: <input>:6: error: unclosed string literal
+    test (" calculateSumOfEvenSquares should return the sum of
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 19:24:18 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:18 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+scala.meta.tokenizers.TokenizeException: <input>:6: error: unclosed string literal
+    test (" calculateSumOfEvenSquares should return the sum of
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 19:24:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:25 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:31 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+scala.meta.tokenizers.TokenizeException: <input>:9: error: Invalid literal number
+    val expectedSum = 4 + 16val futureSum = SumOfSquares . calculateSumOfEvenSquares ( n
+                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:820)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:864)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:335)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 19:24:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:24:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:25:01 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:25:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:25:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:25:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:25:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:25:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:25:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+Mar 21, 2024 7:27:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2838
+Mar 21, 2024 7:27:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2852
+Mar 21, 2024 7:27:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2859
+Mar 21, 2024 7:28:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2885
+2024.03.21 19:29:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:29:17 WARN  Could not find semantic tokens for: file:///C:/Projects/Gsoc-Scaladex-Task/app/controllers/Testing.scala
+2024.03.21 19:29:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 19:29:17 WARN  Could not find semantic tokens for: file:///C:/Projects/Gsoc-Scaladex-Task/app/controllers/Testing.scala
+2024.03.21 20:47:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:50:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+Mar 21, 2024 8:50:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2976
+2024.03.21 20:50:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:50:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:50:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:50:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:50:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:51:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:51:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:51:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+Mar 21, 2024 8:54:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3136
+Mar 21, 2024 8:55:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3151
+Mar 21, 2024 8:55:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3160
+2024.03.21 20:55:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:55:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:57:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:58:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:58:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+2024.03.21 20:58:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\Testing.scala
+Mar 21, 2024 9:00:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3246
+2024.03.21 21:00:09 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:09 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:09 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:12 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:12 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:14 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:14 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:16 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:16 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:18 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:18 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:18 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:26 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:26 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:30 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:30 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:32 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:32 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:36 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:36 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:42 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:42 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:51 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:52 WARN  Build server is not auto-connectable.
+2024.03.21 21:00:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 21:00:54 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 21:00:54 WARN  Build server is not auto-connectable.
+Mar 21, 2024 9:02:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3443
+2024.03.21 21:02:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 9:02:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3474
+2024.03.21 21:02:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:02:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:12:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:13:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:13:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 9:14:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3582
+2024.03.21 21:14:25 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 9:14:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3612
+Mar 21, 2024 9:17:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3636
+Mar 21, 2024 9:18:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3645
+2024.03.21 21:18:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:24:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:24:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:24:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:24:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:24:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 9:24:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3766
+2024.03.21 21:24:57 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:25:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 9:25:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3806
+2024.03.21 21:25:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:26:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:27:00 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:28:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:28:57 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:29:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:29:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:29:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:30:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:30:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 9:31:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4025
+2024.03.21 21:31:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 9:34:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4064
+2024.03.21 21:34:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:34:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:35:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 9:35:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4122
+Mar 21, 2024 9:35:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4136
+2024.03.21 21:36:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:36:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:36:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:36:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:40:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:40:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:41:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:42:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:42:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:42:55 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 9:43:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4320
+2024.03.21 21:43:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:46:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:47:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:47:05 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:47:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:47:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:47:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:47:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:47:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:50:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:50:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:51:02 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:52:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:52:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:54:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:54:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:54:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:54:47 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+scala.meta.tokenizers.TokenizeException: <input>:23: error: unclosed string literal
+    test (" calculateSumOfEvenSquares should return 0 when n is
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 21:54:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:54:48 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+scala.meta.tokenizers.TokenizeException: <input>:23: error: unclosed string literal
+    test (" calculateSumOfEvenSquares should return 0 when n is
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 21:54:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:54:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:55:05 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:56:01 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:56:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 9:56:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4707
+2024.03.21 21:56:05 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:56:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 9:56:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4726
+2024.03.21 21:56:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:57:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:57:13 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:57:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:57:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:57:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 21:58:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:58:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:58:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:58:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:59:02 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+scala.meta.tokenizers.TokenizeException: <input>:31: error: unclosed string literal
+    test ("calculateSumOfEvenSquares should return 0 when n is
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 21:59:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:59:03 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+scala.meta.tokenizers.TokenizeException: <input>:31: error: unclosed string literal
+    test ("calculateSumOfEvenSquares should return 0 when n is
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+Mar 21, 2024 9:59:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4918
+2024.03.21 21:59:05 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 21:59:11 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 9:59:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4957
+2024.03.21 22:03:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 22:08:03 INFO  Shutting down server
+2024.03.21 22:08:03 INFO  shutting down Metals
+2024.03.21 22:08:03 INFO  Exiting server

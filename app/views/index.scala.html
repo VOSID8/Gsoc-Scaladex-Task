@@ -1,0 +1,22 @@
+@()
+@main("Welcome to Play") {
+  <head>
+    <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/main.css")'>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gsoc Scaladex task by Siddharth Banga</h1>
+      <h6>Scala Program to calculate the sum of squares of all even numbers between 1 and n</h6>
+      <form action="@routes.HomeController.index2" method="POST" class="EnterValueN">
+        <div class="form__field">
+          <label for="valueofn" class="hidden">Value of N</label>
+          <input autocomplete="off" id="valueofn" type="number" name="value" class="form__input" placeholder="Value" required>
+        </div>
+
+        <div class="form__button">
+          <input type="submit" value="Calculate">
+        </div>
+      </form>
+    </div>
+  </body>
+}
