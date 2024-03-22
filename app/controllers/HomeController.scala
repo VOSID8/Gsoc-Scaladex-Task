@@ -15,7 +15,6 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     Ok(views.html.index())
   }
   def calculateSumOfEvenSquares(n: Int): Future[Int] = {
-
     val evenNumbersFuture = Future {
       (1 to n).filter(_ % 2 == 0) 
     }
@@ -32,8 +31,11 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     postVals.map { args =>
     val n = args("value").head.toInt
     val result = calculateSumOfEvenSquares(n)
-    val result2 = Await.result(result, Duration.Inf) // Block until the future completes
-    Ok(views.html.result(n,result2))
+    val result2 = Await.result(result, Duration.Inf)
+    println(result2) // Block until the future completes
+    if(n == 0) Ok(views.html.result0(n,result2))
+    else if(n < 0) Ok(views.html.resultn(n,result2))
+    else Ok(views.html.result(n,result2))
     }.getOrElse {
       BadRequest("Something went Wrong")
     }

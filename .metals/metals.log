@@ -1044,3 +1044,180 @@ WARNING: Unmatched cancel notification for request id 4957
 2024.03.21 22:08:03 INFO  Shutting down server
 2024.03.21 22:08:03 INFO  shutting down Metals
 2024.03.21 22:08:03 INFO  Exiting server
+2024.03.21 22:09:18 INFO  Started: Metals version 1.2.2 in folders 'C:\Projects\Gsoc-Scaladex-Task' for client Visual Studio Code 1.87.2.
+22:09:21.780 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+22:09:21.786 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+22:09:21.787 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+22:09:21.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+22:09:21.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+22:09:21.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+22:09:21.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+22:09:21.791 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+22:09:21.792 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+22:09:21.797 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+22:09:21.798 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+22:09:21.798 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+22:09:21.798 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+22:09:21.798 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+22:09:21.798 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+22:09:21.804 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+22:09:21.804 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+22:09:21.805 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+22:09:21.805 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+22:09:21.806 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+22:09:21.970 [pool-1-thread-4] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Projects\Gsoc-Scaladex-Task\.metals\metals (H2 2.2)
+22:09:21.971 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+22:09:21.971 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+22:09:21.973 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+22:09:21.973 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+22:09:21.982 [pool-1-thread-4] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+22:09:21.984 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+22:09:21.984 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+22:09:21.999 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+22:09:22.008 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+22:09:22.025 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+22:09:22.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+22:09:22.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+22:09:22.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+22:09:22.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+22:09:22.027 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+22:09:22.028 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+22:09:22.028 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+22:09:22.028 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+22:09:22.028 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+22:09:22.051 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.050s)
+22:09:22.057 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+22:09:22.069 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+22:09:22.077 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+22:09:22.091 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 28 of 100M
+2024.03.21 22:14:43 INFO  no build target found for C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.21 22:14:43 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 10:14:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+Mar 21, 2024 10:14:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+Mar 21, 2024 10:14:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+2024.03.21 22:14:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 10:14:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 27
+2024.03.21 22:15:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:16:39 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:17:19 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 22:17:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:17:20 WARN  Build server is not auto-connectable.
+2024.03.21 22:17:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+Mar 21, 2024 10:17:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 244
+2024.03.21 22:17:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:17:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:17:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:17:27 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\build.sbt
+scala.meta.tokenizers.TokenizeException: <input>:13: error: unclosed string literal
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.3.0" % "te
+                                                                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.21 22:17:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:18:34 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 22:18:34 WARN  Build server is not auto-connectable.
+Mar 21, 2024 10:20:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 306
+2024.03.21 22:20:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:20:12 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 22:20:12 WARN  Build server is not auto-connectable.
+2024.03.21 22:20:18 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 22:20:18 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:20:18 WARN  Build server is not auto-connectable.
+Mar 21, 2024 10:21:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 344
+Mar 21, 2024 10:21:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 365
+Mar 21, 2024 10:22:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 381
+Mar 21, 2024 10:22:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 390
+2024.03.21 22:22:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\build.sbt
+2024.03.21 22:22:28 INFO  Detected new build tool in C:\Projects\Gsoc-Scaladex-Task
+2024.03.21 22:22:28 WARN  Build server is not auto-connectable.
+Mar 21, 2024 10:24:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 413
+Mar 21, 2024 10:24:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 415
+2024.03.21 22:24:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+2024.03.21 22:24:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\test\controllers\Testing.scala
+Mar 21, 2024 10:34:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 468
+Mar 21, 2024 11:04:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 481
+2024.03.21 23:04:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:38 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:39 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:04:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:05:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:05:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:06:07 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:06:11 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 11:10:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 810
+2024.03.21 23:13:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:13:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:13:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 11:14:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 914
+2024.03.21 23:14:07 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 21, 2024 11:14:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 929
+2024.03.21 23:14:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.21 23:14:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 22, 2024 12:07:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 997
+Mar 22, 2024 12:07:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 998
+Mar 22, 2024 12:07:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 999
+2024.03.22 00:07:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.22 00:07:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.22 00:07:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.22 00:08:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.22 00:08:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.22 00:08:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.22 00:08:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.22 00:08:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala

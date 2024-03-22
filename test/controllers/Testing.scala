@@ -17,7 +17,6 @@ class Testing extends AnyFunSuite with ScalaFutures {
         val futureSum = new HomeController(
           Helpers.stubControllerComponents()).calculateSumOfEvenSquares(n)
         futureSum.futureValue === expectedSum
-        // futureSum.futureValue shouldEqual expectedSum
     }
 
     test ("calculateSumOfEvenSquares should return 0 when n is 0") {
