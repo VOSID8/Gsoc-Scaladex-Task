@@ -21,23 +21,31 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     val squareFutures = for {
       evenNumbers <- evenNumbersFuture
     } yield {
-      evenNumbers.map(x => x * x) 
+      evenNumbers.map(x => x * x).sum 
     }
-    squareFutures.map(_.sum)
+    squareFutures
   }
-
   def index2() = Action { implicit request: Request[AnyContent] =>
     val postVals = request.body.asFormUrlEncoded
-    postVals.map { args =>
-    val n = args("value").head.toInt
-    val result = calculateSumOfEvenSquares(n)
-    val result2 = Await.result(result, Duration.Inf)
-    println(result2) // Block until the future completes
-    if(n == 0) Ok(views.html.result0(n,result2))
-    else if(n < 0) Ok(views.html.resultn(n,result2))
-    else Ok(views.html.result(n,result2))
-    }.getOrElse {
-      BadRequest("Something went Wrong")
+    postVals match {
+      case Some(args) =>
+        val result = for {
+          n <- args.get("value").flatMap(_.headOption).map(_.toInt)
+          result <- Some(Await.result(calculateSumOfEvenSquares(n), Duration.Inf))
+        } yield {
+          if (n == 0) Ok(views.html.result0(n, result))
+          else if (n < 0) Ok(views.html.resultn(n, result))
+          else Ok(views.html.result(n, result))
+        }
+        result.getOrElse(Ok("Failed to calculate result")) 
+      case None => Ok(views.html.index()) 
     }
   }
+    // val n = args("value").head.toInt
+    // val result = calculateSumOfEvenSquares(n)
+    // val result2 = Await.result(result, Duration.Inf)
+    // println(result2) // Block until the future completes
+    // if(n == 0) Ok(views.html.result0(n,result2))
+    // else if(n < 0) Ok(views.html.resultn(n,result2))
+    // else Ok(views.html.result(n,result2))
 }
