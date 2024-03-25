@@ -5,6 +5,11 @@
     <h1 style="text-align: center;">Result: @result</h1>
     <p>@output</p>
     <p>Result is calculated with Scala’s Future, for-comprehensions, map and flatMap</p>
+    <form action="@routes.HomeController.index" method="GET" class="EnterValueN">
+      <div class="form__button">
+        <input type="submit" value="Try Another Input">
+      </div>
+    </form>
   </div>
+  
 }
-```

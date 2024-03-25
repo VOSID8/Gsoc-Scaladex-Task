@@ -38,12 +38,14 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
           else if (n < 0) Ok(views.html
             .result(n, result,"Input can't be negative, Consider re-entering correct inputs"))
           else Ok(views.html
-            .result(n, result,"The sum of squares of even numbers up to " + n + " is " + result))
+            .result(n, result,"The sum of squares of even numbers from 1 upto " + n + " is " + result))
         }
         result.getOrElse(Ok("Failed to calculate result")) 
       case None => Ok(views.html.index()) 
     }
   }
+}
+
     // val n = args("value").head.toInt
     // val result = calculateSumOfEvenSquares(n)
     // val result2 = Await.result(result, Duration.Inf)
@@ -51,4 +53,3 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     // if(n == 0) Ok(views.html.result0(n,result2))
     // else if(n < 0) Ok(views.html.resultn(n,result2))
     // else Ok(views.html.result(n,result2))
-}
