@@ -33,9 +33,12 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
           n <- args.get("value").flatMap(_.headOption).map(_.toInt)
           result <- Some(Await.result(calculateSumOfEvenSquares(n), Duration.Inf))
         } yield {
-          if (n == 0) Ok(views.html.result0(n, result))
-          else if (n < 0) Ok(views.html.resultn(n, result))
-          else Ok(views.html.result(n, result))
+          if (n == 0) Ok(views.html
+            .result(n, result,"Input can't be zero, Consider re-entering correct inputs"))
+          else if (n < 0) Ok(views.html
+            .result(n, result,"Input can't be negative, Consider re-entering correct inputs"))
+          else Ok(views.html
+            .result(n, result,"The sum of squares of even numbers up to " + n + " is " + result))
         }
         result.getOrElse(Ok("Failed to calculate result")) 
       case None => Ok(views.html.index()) 

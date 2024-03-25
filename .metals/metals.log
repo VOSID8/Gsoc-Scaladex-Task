@@ -1306,3 +1306,363 @@ WARNING: Unmatched cancel notification for request id 130
 2024.03.25 00:36:35 INFO  Shutting down server
 2024.03.25 00:36:35 INFO  shutting down Metals
 2024.03.25 00:36:35 INFO  Exiting server
+2024.03.25 00:59:59 INFO  Started: Metals version 1.2.2 in folders 'C:\Projects\Gsoc-Scaladex-Task' for client Visual Studio Code 1.87.2.
+01:00:02.668 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+01:00:02.674 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+01:00:02.674 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+01:00:02.679 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+01:00:02.679 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+01:00:02.680 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+01:00:02.680 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+01:00:02.680 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+01:00:02.681 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+01:00:02.688 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+01:00:02.689 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+01:00:02.689 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+01:00:02.689 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+01:00:02.689 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+01:00:02.689 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+01:00:02.697 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:00:02.698 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+01:00:02.701 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+01:00:02.701 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+01:00:02.701 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+01:00:02.858 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Projects\Gsoc-Scaladex-Task\.metals\metals (H2 2.2)
+01:00:02.858 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+01:00:02.858 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+01:00:02.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+01:00:02.860 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+01:00:02.869 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+01:00:02.872 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+01:00:02.872 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:00:02.890 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+01:00:02.900 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:00:02.918 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+01:00:02.918 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+01:00:02.918 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:00:02.918 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+01:00:02.918 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+01:00:02.920 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+01:00:02.920 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+01:00:02.920 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+01:00:02.920 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+01:00:02.920 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+01:00:02.941 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.049s)
+01:00:02.946 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+01:00:02.955 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+01:00:02.962 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+01:00:03.185 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 45 of 100M
+2024.03.25 01:00:17 INFO  no build target found for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.25 12:31:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:31:09 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:31:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:31:38 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 12:34:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 107
+2024.03.25 12:34:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:39 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:34:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:35:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:37:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:37:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:37:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 12:37:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 575
+2024.03.25 12:37:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:38:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:38:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:38:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:38:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:39:19 ERROR Failed to tokenize input for semantic tokens for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+scala.meta.tokenizers.TokenizeException: <input>:34: error: unclosed character literal
+      }''
+       ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
+2024.03.25 12:39:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:39:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:39:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:46:44 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:47:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:47:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:48:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:48:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:48:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:48:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:48:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:05 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:07 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:13 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:18 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:49:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:13 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:50:57 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:51:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:51:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:51:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:51:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:51:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:51:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:51:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 12:54:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:46:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:46:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:46:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:46:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:46:55 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:47:07 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 1:47:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1519
+2024.03.25 13:47:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:47:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 1:47:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1557
+2024.03.25 13:47:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:49:11 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:49:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:49:39 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:50:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:50:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:50:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 13:50:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:05:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 2:05:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1826
+2024.03.25 14:05:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:05:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:05:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:05:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:06:55 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:08:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:08:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 2:08:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1982
+2024.03.25 14:08:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:08:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:08:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:08:55 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:09:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:09:09 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:09:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:09:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 2:09:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2127
+2024.03.25 14:09:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:09:43 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:09:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:10:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:10:43 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:22:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:22:42 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:23:02 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:23:13 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:23:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:23:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:24:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:24:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:24:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:25:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:25:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:25:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:25:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:25 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:34 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:26:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:27:02 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:28:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:11 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:29:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:30:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:30:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:30:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:31:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:31:51 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:31:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:31:56 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:32:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:42:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:42:53 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:43:01 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:43:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:43:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:43:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:43:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:43:49 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:08 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:16 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 2:44:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3289
+Mar 25, 2024 2:44:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3288
+2024.03.25 14:44:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:44:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:45:09 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:45:12 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:45:13 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:45:36 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:06 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:07 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:52 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:54 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:46:58 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:47:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:47:32 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:47:59 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:48:05 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:48:25 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:48:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:48:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:50:33 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:50:35 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:50:37 WARN  Using indexes to guess the definition of calculateSumOfEvenSquares
+2024.03.25 14:50:38 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:50:47 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:50:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:51:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:51:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:51:48 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:52:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:52:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:52:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:52:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:55:02 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 14:55:04 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 2:55:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3835
+2024.03.25 14:55:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:22:03 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:22:10 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:22:14 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:22:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 5:23:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3923
+Mar 25, 2024 5:36:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3935
+Mar 25, 2024 5:36:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3936
+Mar 25, 2024 5:36:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3937
+Mar 25, 2024 5:36:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3938
+Mar 25, 2024 5:37:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3939
+2024.03.25 17:39:57 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 5:40:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3963
+2024.03.25 17:40:20 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:27 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:29 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:31 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:40 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:40:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 5:40:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4100
+2024.03.25 17:41:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:41:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:41:28 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:41:30 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.25 17:41:39 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+Mar 25, 2024 5:57:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4181
+Mar 25, 2024 5:57:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4182
+Mar 25, 2024 5:57:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4191
+2024.03.25 17:57:58 INFO  Shutting down server
+2024.03.25 17:57:58 INFO  shutting down Metals
+2024.03.25 17:57:58 INFO  Exiting server
+2024.03.25 17:57:58 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+
