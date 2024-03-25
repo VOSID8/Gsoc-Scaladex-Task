@@ -1,5 +1,6 @@
 # GSoc ScalaDex Task: Asynchronous Sum of Even Squares Calculator
 
+Working application can be accessed from [https://gsoctask.visionofsid.com/](https://gsoctask.visionofsid.com/) as a sub-domain of my domain name.
 This repository contains a web application built using the Play Framework in Scala for Gsoc Scaladex Task. The application calculates the sum of squares of even numbers up to a given limit asynchronously.
 
 ## Table of Contents
