@@ -1723,3 +1723,68 @@ WARNING: Unmatched cancel notification for request id 195
 2024.03.26 00:03:51 INFO  Shutting down server
 2024.03.26 00:03:51 INFO  shutting down Metals
 2024.03.26 00:03:51 INFO  Exiting server
+2024.03.26 14:53:59 INFO  Started: Metals version 1.2.2 in folders 'C:\Projects\Gsoc-Scaladex-Task' for client Visual Studio Code 1.87.2.
+14:54:01.294 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+14:54:01.299 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+14:54:01.299 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+14:54:01.302 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+14:54:01.303 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+14:54:01.303 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+14:54:01.303 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+14:54:01.303 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a ...
+14:54:01.304 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/C:/Users/Siddh/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+14:54:01.308 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+14:54:01.308 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+14:54:01.308 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+14:54:01.309 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+14:54:01.309 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+14:54:01.309 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+14:54:01.313 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:54:01.313 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+14:54:01.315 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+14:54:01.315 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+14:54:01.315 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+14:54:01.562 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:C:\Projects\Gsoc-Scaladex-Task\.metals\metals (H2 2.2)
+14:54:01.563 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+14:54:01.563 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+14:54:01.564 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+14:54:01.564 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+14:54:01.571 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+14:54:01.573 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+14:54:01.573 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:54:01.587 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+14:54:01.592 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:54:01.604 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+14:54:01.604 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+14:54:01.604 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:54:01.604 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+14:54:01.604 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+14:54:01.605 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+14:54:01.605 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+14:54:01.605 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+14:54:01.605 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+14:54:01.605 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+14:54:01.619 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.031s)
+14:54:01.622 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+14:54:01.630 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+14:54:01.641 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+14:54:01.738 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 40 of 100M
+2024.03.26 14:54:10 INFO  no build target found for C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.03.26 14:54:37 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:54:41 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:54:45 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:54:50 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:55:11 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:55:15 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:55:17 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:55:19 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:55:21 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:55:22 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:55:23 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:59:43 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 14:59:46 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 15:01:24 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 15:01:26 WARN  no build target for: C:\Projects\Gsoc-Scaladex-Task\app\controllers\HomeController.scala
+2024.03.26 15:03:01 INFO  Shutting down server
+2024.03.26 15:03:01 INFO  shutting down Metals
+2024.03.26 15:03:01 INFO  Exiting server
