@@ -79,15 +79,15 @@ def index() = Action { implicit request: Request[AnyContent] =>
 
 ```scala
 def calculateSumOfEvenSquares(n: Int): Future[Int] = {
-  val evenNumbersFuture = Future {
+  val evenNumbers = Future {
     (1 to n).filter(_ % 2 == 0) 
   }
-  val squareFutures = for {
-    evenNumbers <- evenNumbersFuture
+  val result = for {
+    evenNumbers2 <- evenNumbers
   } yield {
-    evenNumbers.map(x => x * x).sum 
+    evenNumbers2.map(x => x * x).sum 
   }
-  squareFutures
+  result
 }
 ```
 
